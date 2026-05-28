@@ -55,3 +55,9 @@ v1 only queues `studio_audio_generation_jobs`; runtime TTS/STT/Kokoro worker is 
 - No AI/STT/TTS runtime generation worker.
 - Minimal UI polish.
 - No advanced validation/error surfacing.
+
+## E2E smoke tests
+```bash
+npm run test:e2e
+npm run test:e2e:ui
+```
