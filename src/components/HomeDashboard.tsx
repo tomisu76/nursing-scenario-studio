@@ -1,0 +1,1 @@
+export function HomeDashboard({ missingEnv, onStudent, onTeacher }:{missingEnv:boolean;onStudent:()=>void;onTeacher:()=>void}){return <div><button onClick={onStudent}>Student Player</button><button onClick={onTeacher}>Teacher Editor</button>{missingEnv && <p className='warn'>Missing Supabase env</p>}</div>}

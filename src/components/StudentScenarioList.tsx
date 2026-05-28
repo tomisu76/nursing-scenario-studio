@@ -1,0 +1,2 @@
+import type { StudioScenario } from '../types';
+export function StudentScenarioList({scenarios,onOpen,onBack}:{scenarios:StudioScenario[];onOpen:(s:StudioScenario)=>void;onBack:()=>void}){return <div><button onClick={onBack}>Back</button>{scenarios.map(s=><div key={s.id}><b>{s.title}</b><p>{s.description}</p><small>{s.level} / {s.language}</small><button onClick={()=>onOpen(s)}>Open</button></div>)}</div>}
